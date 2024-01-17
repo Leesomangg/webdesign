@@ -23,11 +23,11 @@ $(document).ready(function () {
       },
       768: {
         slidesPerView: 3,
-        spaceBetween: 20,
+        spaceBetween: 30,
       },
       1050: {
         slidesPerView: 4,
-        spaceBetween: 10,
+        spaceBetween: 30,
       },
     },
   });
