@@ -9,8 +9,8 @@ $(document).ready(function () {
     spaceBetween: 30,
     //navigation
     navigation: {
-      nextEl: ".portfolioSwiper .next",
-      prevEl: ".portfolioSwiper .prev",
+      nextEl: ".portfolio-slider-wrap .next",
+      prevEl: ".portfolio-slider-wrap .prev",
     },
     //너비에 따른 슬라이더 설정
     breakpoints: {
@@ -22,9 +22,19 @@ $(document).ready(function () {
         spaceBetween: 30,
       },
       768: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+      1050: {
         slidesPerView: 4,
-        spaceBetween: 30,
+        spaceBetween: 10,
       },
     },
+  });
+  // 토글 버튼 코드
+  var menuToggleBtn = $(".menu-toggle-btn");
+  mainMenu = $(".main-menu1");
+  menuToggleBtn.click(function () {
+    mainMenu.slideToggle();
   });
 });

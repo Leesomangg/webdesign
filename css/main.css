@@ -30,10 +30,14 @@ nav {
   align-items: center;
   justify-content: space-between;
   height: 40px;
+  position: relative;
 }
 .menu-toggle-btn {
-  /* 보일때는 display:block; */
-  display: none;
+border:none;
+background: none;
+color: #333;
+font-size: 18px;
+display: none;
 }
 .main-menu {
   display: flex;
@@ -46,6 +50,18 @@ nav {
   font-size: 14px;
   font-weight: bold;
   text-transform: uppercase;
+}
+.main-menu1{
+  width: 100%;
+  background-color: #363636;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  padding: 10px 15px;
+  display: none;
+}
+.main-menu1 li a{
+  color: #fff;
 }
 .social-menu {
   display: flex;
@@ -153,4 +169,43 @@ h2 {
   font-family: "Open Sans", sans-serif;
   text-align: center;
   width: 254px;
+}
+.portfolio-slider-wrap{
+  position: relative;
+}
+.controls span{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 36px;
+  height: 36px;
+  background-color: rgba(0, 0, 0, 0.3);
+  /* z-index: 999; */
+  color: #fff;
+  font-size: 14px;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 36px;
+}
+.controls .prev{
+  position: absolute;
+  left: 0;
+}
+.controls .next{
+  position: absolute;
+  right: 0;
+}
+/* more btn */
+.read-more{
+  margin-top: 30px;
+  text-align: center;
+}
+.btn{
+  width: 234px;
+  /* height: 60px; */
+  line-height: 60px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color:#fff;
+  display: inline-block;
+  text-transform: uppercase;
 }
